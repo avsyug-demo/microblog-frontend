@@ -7,7 +7,7 @@ def cbpArtifactId = registerBuildArtifactMetadata(
 echo "Registered artifact: $cbpArtifactId"
 sleep 5
 registerDeployedArtifactMetadata(
-    artifactId: "$cbpArtifactId",
+    id: "$cbpArtifactId",
     targetEnvironment: "prod"
 )
 echo "Deploying"
