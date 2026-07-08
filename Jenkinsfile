@@ -8,7 +8,7 @@ echo "Registered artifact: $cbpArtifactId"
 sleep 5
 registerDeployedArtifactMetadata(
     id: "$cbpArtifactId",
-    targetEnvironment: "prod"
+    targetEnvironment: "GregsSuborgEnv"
 )
 echo "Deploying"
 if (Math.random() < 0.5) {
